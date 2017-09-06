@@ -4,9 +4,13 @@
 gulp web
 
 #### 新建less文件需要运行 gulp less 用来生成 css 文件（第一次需要）
+#### 新建 asset/js/page/*.js 文件需要运行 gulp es6 来编译生成 build/js/page/*.js (第一次需要)
 #### 默认端口号：9999
 
 ## 本地开发环境实现功能
+
+asset/ 为开发文件夹，其中 less 会编译到 build下的 css 文件夹下， js 会编译到 build 下的js文件夹下
+
 * 对less文件实现实时编译
 * 合成公用脚本js文件 vendor.min.js，包括（zepto,flexible,art-template）
 	* 如需新增或删除公用js文件，在 gulpfile.js 文件 concat 任务下添加或删除文件。 然后 运行 gulp concat
